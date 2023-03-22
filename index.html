@@ -5,58 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./css/style.css">
 
     <title>PreEntrega3_Ariza</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <span>LOGO</span>
-        </div>
-        <div class="headerbtn">
-            <button type="button">CARRITO</button>
-            <span>Total: </span>
-        </div>
+        <h1 id="titulo" class="titulo">Music shop</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
     </header>
 
-    <div class="main">
-        <div class="sidebar">
-            <ul>
-                <li>barra</li>
-                <li>barra</li>
-                <li>barra</li>
-                <li>barra</li>
-            </ul>
-        </div>
-    
-        <div class="content">
-            <div class="item01">
-                <img src="https://loremflickr.com/320/240/car" alt="">
+    <main id="contenedor-productos">
+        <!-- Inner productos -->
+    </main>
 
-                <div class="itemInfo">
-                    <h3>Item01</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, unde! Nostrum corporis, vero delectus numquam consequuntur necessitatibus possimus saepe. Excepturi!</p>
-                </div>
-
-                <div class="itemBtns">
-                    <button type="button">Agregar a carrito</button>
-
-                    <div>
-                        <span>Unidad</span>
-                        <button type="button">+</button>
-                        <span>0</span>
-                        <button type="button">-</button>
-                    </div>
-                </div>
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- Inner productos modal -->
             </div>
-    
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
         </div>
-
     </div>
 
     <footer class="footer">
-        <span>final de pagina</span>
+        <span>Carrito de compras JS</span>
     </footer>
 
     <script src="./js/main.js"></script>
